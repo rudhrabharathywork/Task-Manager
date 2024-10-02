@@ -1,0 +1,90 @@
+.loginPage{
+    background: url(../../assets/images/BgImage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F1F1F1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wavesImg {
+    width: 100%;
+}
+
+.loginTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #514747;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.loginForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+#email,
+#password {
+    border: none;
+    width: 75%;
+    background: #EFEFEF;
+    box-shadow: 10px 10px 20px #BEBEBE, -10px -10px 20px #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    outline: none;
+}
+
+[placeholder="Email"],
+[placeholder="Password"] {
+    font-size: .8rem;
+    line-height: 23px;
+}
+
+.loginSubmitBtn {
+    width: 40%;
+    background: linear-gradient(263.02deg, #AC3EE1 0%, #541CA0 100%);
+    box-shadow: 8px 8px 10px #BEBEBE;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 30px 0 15px;
+    cursor: pointer;
+}
+
+.inputField-eyeIcon {
+    width: 100%;
+    position: relative;
+    left: 8%;
+}
+
+.eyeicon {
+    color: #767676;
+    position: absolute;
+    top: 33%;
+    left: 73%;
+    font-size: 23px;
+    cursor: pointer;
+}
