@@ -1,22 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from "../components/Navbar"
 import TaskForm from '../components/TaskForm';
 import TaskList from '../components/TaskList';
 import "../assets/styles/App.css"
-import { useNavigate } from 'react-router-dom';
 
 
 const TaskManager = () => {
   const [tasks, setTasks] = useState([]);
-
-  const navigate = useNavigate();
-
-    useEffect(() => {
-        const token = localStorage.getItem('token');
-        if (!token) {
-          navigate('/');
-        }
-    }, [navigate]);
 
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem('tasks'));
@@ -44,8 +33,8 @@ const TaskManager = () => {
 
   return (
     <>
-      <Navbar />
       <div className="App">
+        <h1 style={{fontFamily:"inherit", fontWeight:300, textAlign:"center", marginTop:"3rem"}}>Task Manager</h1>
         <TaskForm addTask={addTask} />
         <TaskList tasks={tasks} completeTask={completeTask} deleteTask={deleteTask} />
       </div>

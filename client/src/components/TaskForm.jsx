@@ -25,7 +25,7 @@ const TaskForm = ({ addTask }) => {
 
     return (
         <form onSubmit={handleSubmit}
-            style={{ display: 'flex', alignItems: "center", justifyContent: "space-evenly", maxHeight: "4rem", marginTop: "3rem" }}>
+            style={{ display: 'flex', alignItems: "center", justifyContent: "space-evenly", maxHeight: "4rem", marginTop: "2rem" }}>
             <TextField
                 sx={{ minWidth: "250px" }}
                 name="title"
@@ -67,11 +67,11 @@ const TaskForm = ({ addTask }) => {
                     <MenuItem value="high">High</MenuItem>
                 </Select>
             </FormControl>
-            <Button type="submit" variant="contained" color="primary"
-                sx={[{ minWidth: "150px", height: "3rem" }, {
+            <Button type="submit" variant="contained"
+                sx={[{ minWidth: "150px", height: "3rem", color: "#fff", backgroundColor: "#1a57e6" }, {
                     '&:hover': {
                         borderRadius: "3rem",
-                        transition:"ease-in-out",
+                        transition: "ease-in-out",
                         transitionDuration: ".2s"
                     }
                 }]}>

@@ -37,3 +37,8 @@ button {
     margin: 5px;
     padding: 5px 10px;
 }
+
+.cl-avatarBox{
+    width: 2.75rem;
+    height: 2.75rem;
+}
