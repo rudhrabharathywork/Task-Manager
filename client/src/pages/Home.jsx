@@ -1,21 +1,14 @@
-import AppBg from "../assets/images/beamerxuserflow BG.png"
-
+import AppBg from "../assets/images/beamerxuserflow BG.png";
 
 const Home = () => {
-    return (
-        <>
-            <div style={{
-                backgroundImage: `url(${AppBg})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                height: '91.5vh',
-                width: '100%'
-            }}>
-            </div>
-
-        </>
-    )
-}
+  return (
+    <>
+      <div className="homeContainer">
+        <h2></h2>
+        <img style={{ width: "60%" }} src={AppBg}></img>
+      </div>
+    </>
+  );
+};
 
 export default Home;

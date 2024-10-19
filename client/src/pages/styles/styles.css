@@ -1,89 +1,144 @@
-.loginPage{
-    background: url(../../assets/images/BgImage.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fdfdfd;
+}
+
+.homeContainer h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.homeContainer img {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 61px -22px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 61px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 61px -22px rgba(0, 0, 0, 0.75);
+}
+
+.loginPage {
+  background: url(../../assets/images/BgImage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginCard {
-    max-width: 350px;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: #F1F1F1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wavesImg {
-    width: 100%;
+  width: 100%;
 }
 
 .loginTitle {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: #514747;
-    text-align: center;
-    margin: 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #514747;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .loginForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
 }
 
 #email,
 #password {
-    border: none;
-    width: 75%;
-    background: #EFEFEF;
-    box-shadow: 10px 10px 20px #BEBEBE, -10px -10px 20px #FFFFFF;
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin: 10px 0px;
-    outline: none;
+  border: none;
+  width: 75%;
+  background: #efefef;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  outline: none;
 }
 
 [placeholder="Email"],
 [placeholder="Password"] {
-    font-size: .8rem;
-    line-height: 23px;
+  font-size: 0.8rem;
+  line-height: 23px;
 }
 
 .loginSubmitBtn {
-    width: 40%;
-    background: linear-gradient(263.02deg, #AC3EE1 0%, #541CA0 100%);
-    box-shadow: 8px 8px 10px #BEBEBE;
-    border-radius: 10px;
-    border: none;
-    height: 50px;
-    color: #ffffff;
-    font-size: 18px;
-    margin: 30px 0 15px;
-    cursor: pointer;
+  width: 40%;
+  background: linear-gradient(263.02deg, #ac3ee1 0%, #541ca0 100%);
+  box-shadow: 8px 8px 10px #bebebe;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 30px 0 15px;
+  cursor: pointer;
 }
 
 .inputField-eyeIcon {
-    width: 100%;
-    position: relative;
-    left: 8%;
+  width: 100%;
+  position: relative;
+  left: 8%;
 }
 
 .eyeicon {
-    color: #767676;
-    position: absolute;
-    top: 33%;
-    left: 73%;
-    font-size: 23px;
-    cursor: pointer;
+  color: #767676;
+  position: absolute;
+  top: 33%;
+  left: 73%;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.page404Container {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.5s alternate infinite;
+}
+
+.fof h2 {
+  font-size: 20px;
+  display: block;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
+  }
+
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
 }

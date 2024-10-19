@@ -1,40 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './assets/styles/index.css';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import About from './pages/About';
-import TaskManager from './pages/TaskManager';
-import AuthLayout from './layouts/Authlayout';
-import RootLayout from './layouts/RootLayout';
-import App from './App';
-
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./assets/styles/index.css";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import About from "./pages/About";
+import TaskManager from "./pages/Task Manager";
+import AuthLayout from "./layouts/AuthLayout";
+import RootLayout from "./layouts/RootLayout";
+import App from "./App";
+import Page404 from "./pages/Page404";
 
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/home', element: <Home /> },
-      { path: '/about', element: <About /> },
-      { path: '/products', element: <Products /> },
+      { path: "/", element: <Home /> },
+      { path: "/home", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/products", element: <Products /> },
+      { path: "/page404", element: <Page404 /> },
       {
         element: <AuthLayout />,
-        children: [
-          { path: '/taskmanager', element: <TaskManager /> },
-        ],
+        children: [{ path: "/taskmanager", element: <TaskManager /> }],
       },
     ],
   },
-  { path: '/', element: <Home /> },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App>
-      <RouterProvider router={router} />
-    </App>
-  </React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App>
+    <RouterProvider router={router} />
+  </App>
 );

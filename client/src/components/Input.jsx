@@ -1,5 +1,5 @@
-import React from 'react';
-import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
+import React from "react";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const Input = ({ id, type, placeholder, value, onChange }) => {
   return (
@@ -11,27 +11,31 @@ const Input = ({ id, type, placeholder, value, onChange }) => {
         value={value}
         required
         onChange={onChange}
-      >
-      </input>
+      ></input>
     </>
-  )
-}
+  );
+};
 
-
-
-export const PasswordInput = ({ id, value, onChange, placeholder, isVisible, toggleVisibility }) => (
-    <div className="inputField-eyeIcon">
-        <Input
-            type={isVisible ? 'text' : 'password'}
-            id={id}
-            placeholder={placeholder}
-            value={value}
-            onChange={onChange}
-        />
-        <span className="eyeicon" onClick={toggleVisibility}>
-            {isVisible ? <AiFillEyeInvisible /> : <AiFillEye />}
-        </span>
-    </div>
+export const PasswordInput = ({
+  id,
+  value,
+  onChange,
+  placeholder,
+  isVisible,
+  toggleVisibility,
+}) => (
+  <div className="inputField-eyeIcon">
+    <Input
+      type={isVisible ? "text" : "password"}
+      id={id}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+    />
+    <span className="eyeicon" onClick={toggleVisibility}>
+      {isVisible ? <AiFillEyeInvisible /> : <AiFillEye />}
+    </span>
+  </div>
 );
 
 export default Input;

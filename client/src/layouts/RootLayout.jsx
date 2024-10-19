@@ -1,11 +1,11 @@
-import { ClerkProvider } from '@clerk/clerk-react';
-import { Outlet, useNavigate, Routes } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import { ClerkProvider } from "@clerk/clerk-react";
+import { Outlet, useNavigate, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 if (!PUBLISHABLE_KEY) {
-  throw new Error('Missing Clerk publishable key');
+  throw new Error("Missing Clerk publishable key");
 }
 
 export default function RootLayout() {
@@ -17,12 +17,8 @@ export default function RootLayout() {
       routerReplace={(to) => navigate(to, { replace: true })}
       publishableKey={PUBLISHABLE_KEY}
     >
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Outlet />
-      </main>
+      <Navbar />
+      <Outlet />
     </ClerkProvider>
   );
 }
