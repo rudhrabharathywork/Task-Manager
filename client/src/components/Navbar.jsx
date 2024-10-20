@@ -134,8 +134,8 @@ function Navbar() {
             <UserButton />
           ) : (
             <SignInButton
-              forceRedirectUrl="/home"
-              fallbackRedirectUrl="/home"
+              forceRedirectUrl="/"
+              fallbackRedirectUrl="/"
               style={isHovered ? { ...baseStyle, ...hoverStyle } : baseStyle}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
