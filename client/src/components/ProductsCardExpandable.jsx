@@ -71,6 +71,7 @@ export default function ProductsCardExpandable({
           <Button
             href={Doclink}
             target="_blank"
+            rel="noopener noreferrer"
             sx={{ ...buttonStyles, marginRight: ".5rem" }}
             size="small"
           >
@@ -79,6 +80,7 @@ export default function ProductsCardExpandable({
           <Button
             href={Tryoutlink}
             target="_blank"
+            rel="noopener noreferrer"
             sx={buttonStyles}
             size="small"
           >
@@ -113,6 +115,7 @@ export default function ProductsCardExpandable({
                 <a
                   href={Doclink}
                   target="_blank"
+                  rel="noopener noreferrer"
                   style={{ textDecoration: "underline", color: "black" }}
                 >
                   {title}

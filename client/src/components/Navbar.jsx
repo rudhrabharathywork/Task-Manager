@@ -92,11 +92,11 @@ function Navbar() {
               alignItems: "center",
             }}
           >
-            <a href="https://getbeamer.com" target="_blank">
+            <a href="https://getbeamer.com" target="_blank" rel="noopener noreferrer">
               <img style={{ color: "#FFCB1F" }} src={BeamerSVG}></img>
             </a>
             <img style={{ padding: "0 7px" }} src={X}></img>
-            <a href="https://userflow.com" target="_blank">
+            <a href="https://userflow.com" target="_blank" rel="noopener noreferrer">
               <img style={{ color: "#1a57e6" }} src={UserflowSVG}></img>
             </a>
           </div>

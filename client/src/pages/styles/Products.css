@@ -1,7 +1,11 @@
+.userflowContainer, .beamerContainer{
+  padding: 2rem 0;
+}
+
 .productHeader {
   margin: 0;
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 6rem;
   padding-bottom: 5rem;
   display: flex;
   justify-content: center;

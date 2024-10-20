@@ -51,6 +51,7 @@ export default function ProductsCard({
         <Button
           href={Doclink}
           target="_blank"
+          rel="noopener noreferrer"
           sx={{ ...buttonStyles, marginRight: ".5rem" }}
           size="small"
         >
@@ -59,6 +60,7 @@ export default function ProductsCard({
         <Button
           href={Tryoutlink}
           target="_blank"
+          rel="noopener noreferrer"
           sx={buttonStyles}
           size="small"
         >
