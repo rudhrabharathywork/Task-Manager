@@ -21,12 +21,14 @@ const router = createBrowserRouter([
       { path: "/products", element: <Products /> },
       { path: "/page404", element: <Page404 /> },
       {
+        path: "/",
         element: <AuthLayout />,
         children: [{ path: "/taskmanager", element: <TaskManager /> }],
       },
     ],
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <App>
