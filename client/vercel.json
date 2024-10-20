@@ -1,0 +1,14 @@
+{
+  "rewrites": [{ "source": "/taskmanager", "destination": "/taskmanager" }],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "script-src 'self' https://scdn.clerk.com https://cdn.jsdelivr.net https://square-beetle-51.clerk.accounts.dev; worker-src 'self' blob:;"
+        }
+      ]
+    }
+  ]
+}

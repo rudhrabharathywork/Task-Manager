@@ -134,8 +134,8 @@ function Navbar() {
             <UserButton />
           ) : (
             <SignInButton
-              forceRedirectUrl="/taskmanager"
-              fallbackRedirectUrl="/taskmanager"
+              forceRedirectUrl="/home"
+              fallbackRedirectUrl="/home"
               style={isHovered ? { ...baseStyle, ...hoverStyle } : baseStyle}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
