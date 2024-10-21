@@ -72,7 +72,7 @@ const Products = () => {
       />
       <ProductsSection
         logo={UserflowLogo}
-        title="Products"
+        title="Features"
         products={productsJSONData.userflow}
         productType="userflow"
       />
